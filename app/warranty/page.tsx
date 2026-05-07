@@ -14,20 +14,7 @@ export default function WarrantyPage() {
       </div>
 
       <div className="relative z-10">
-        {/* 統一導覽列 */}
-        <nav className="p-8 border-b border-white/5 flex justify-between items-center bg-[#020617]/90 backdrop-blur-xl sticky top-0 shadow-2xl">
-          <Link href="/" className="text-3xl font-black italic tracking-tighter text-white hover:text-cyan-400 transition flex items-center gap-3">
-            AI PC MASTER
-          </Link>
-          <div className="flex items-center gap-12 text-lg font-black uppercase">
-              <Link href="/" className="text-slate-400 hover:text-white transition">🏠 首頁</Link>
-              <Link href="/blog" className="text-slate-400 hover:text-white transition">📰 最新資訊</Link>
-              <Link href="/warranty" className="text-white border-b-2 border-cyan-500 pb-1">🛡️ 保固條件</Link>
-              <a href={lineUrl} target="_blank" rel="noopener noreferrer" className="bg-[#06C755] text-white px-10 py-3 rounded-full hover:brightness-110 transition shadow-[0_0_30px_rgba(6,199,85,0.4)]">
-                💬 聯絡我們
-              </a>
-          </div>
-        </nav>
+      
 
         <div className="max-w-4xl mx-auto px-6 py-24">
           <h1 className="text-6xl font-black italic uppercase mb-16 border-l-8 border-cyan-500 pl-8">Warranty Policy / <span className="text-cyan-400">保固條款</span></h1>

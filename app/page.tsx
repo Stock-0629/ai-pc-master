@@ -31,20 +31,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-10">
-        <nav className="p-8 border-b border-white/5 flex justify-between items-center bg-[#020617]/90 backdrop-blur-xl sticky top-0 shadow-2xl">
-          <Link href="/" className="text-3xl font-black italic tracking-tighter text-white hover:text-cyan-400 transition flex items-center gap-3">
-            AI PC MASTER
-          </Link>
-          <div className="flex items-center gap-12 text-lg font-black uppercase">
-              <Link href="/" className="text-white border-b-2 border-cyan-500 pb-1">🏠 首頁</Link>
-              <Link href="/blog" className="text-slate-400 hover:text-white transition">📰 最新資訊</Link>
-              <Link href="/warranty" className="text-slate-400 hover:text-white transition">🛡️ 保固條件</Link>
-              {/* ⚠️ 物理鎖死 1 */}
-              <a href="https://lin.ee/rELcEE2" target="_blank" rel="noopener noreferrer" className="bg-[#06C755] text-white px-10 py-3 rounded-full hover:brightness-110 transition shadow-[0_0_30px_rgba(6,199,85,0.4)]">
-                💬 聯絡我們
-              </a>
-          </div>
-        </nav>
+        
 
         {/* Hero */}
         <section className="text-center pt-32 pb-16 px-6">
@@ -123,7 +110,9 @@ export default function Home() {
 
         {/* ⚠️ 物理鎖死 4 (懸浮) */}
         <a href="https://lin.ee/rELcEE2" target="_blank" rel="noopener noreferrer" className="fixed bottom-10 right-10 z-50 bg-[#06C755] p-5 rounded-full shadow-[0_0_40px_rgba(6,199,85,0.6)] hover:scale-110 transition active:scale-95">
-            <svg className="w-10 h-10 fill-white" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.047c-.052.303-.253 1.184 1.1 0 1.353-1.184 7.309-4.303 9.971-7.369 1.959-2.227 1.968-4.041 1.968-4.963z"/></svg>
+            <svg className="w-10 h-10 fill-white" viewBox="0 0 24 24">
+              <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.047c-.052.303-.253 1.184-.253 1.184l-.03 1.03c-.007.242.164.288.346.132l2.392-2.048c.31-.266.651-.57 1.285-.596 5.623-.23 9.219-4.225 9.219-9.144z"/>
+            </svg>
         </a>
       </div>
     </main>
