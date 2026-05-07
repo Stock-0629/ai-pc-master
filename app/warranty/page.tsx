@@ -70,15 +70,6 @@ export default function WarrantyPage() {
             </section>
           </div>
         </div>
-
-        {/* 統一頁尾 */}
-        <footer className="text-center py-24 border-t border-white/5 bg-black/20">
-            <div className="mb-6">
-                <p className="text-2xl font-black text-white tracking-widest uppercase">托尼購商行</p>
-                <p className="text-sm font-bold text-cyan-500 uppercase tracking-widest">JC 電腦組裝 / 訂製</p>
-            </div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.6em] text-slate-700 italic">
-                AI PC Master Bureau © 2026
             </p>
         </footer>
       </div>

@@ -100,13 +100,6 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="text-center py-24 border-t border-white/5 bg-black/20">
-            <div className="mb-8">
-                <p className="text-3xl font-black text-white tracking-[0.2em] uppercase">托尼購商行</p>
-                <p className="text-lg font-bold text-cyan-500 uppercase tracking-widest mt-2">JC 電腦組裝 / 訂製</p>
-            </div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.6em] text-slate-700 italic">AI PC MASTER BUREAU © 2026</p>
-        </footer>
 
     
       </div>
