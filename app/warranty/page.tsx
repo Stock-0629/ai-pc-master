@@ -3,7 +3,7 @@
 import Link from 'next/link';
 
 export default function WarrantyPage() {
-  const lineUrl = "https://lin.ee";
+  const lineUrl = "https://lin.ee/rELcEE2";
 
   return (
     <main className="min-h-screen bg-[#020617] text-slate-50 font-sans relative overflow-hidden selection:bg-cyan-500 selection:text-slate-950">
