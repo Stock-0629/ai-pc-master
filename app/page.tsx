@@ -108,12 +108,7 @@ export default function Home() {
             <p className="text-[11px] font-bold uppercase tracking-[0.6em] text-slate-700 italic">AI PC MASTER BUREAU © 2026</p>
         </footer>
 
-        {/* ⚠️ 物理鎖死 4 (懸浮) */}
-        <a href="https://lin.ee/rELcEE2" target="_blank" rel="noopener noreferrer" className="fixed bottom-10 right-10 z-50 bg-[#06C755] p-5 rounded-full shadow-[0_0_40px_rgba(6,199,85,0.6)] hover:scale-110 transition active:scale-95">
-            <svg className="w-10 h-10 fill-white" viewBox="0 0 24 24">
-              <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.047c-.052.303-.253 1.184-.253 1.184l-.03 1.03c-.007.242.164.288.346.132l2.392-2.048c.31-.266.651-.57 1.285-.596 5.623-.23 9.219-4.225 9.219-9.144z"/>
-            </svg>
-        </a>
+    
       </div>
     </main>
   );
