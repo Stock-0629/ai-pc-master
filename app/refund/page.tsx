@@ -101,7 +101,6 @@ export default function RefundPolicyPage() {
               className="inline-flex items-center gap-4 bg-[#06C755] text-white font-black py-5 px-14 rounded-2xl hover:scale-105 transition-all shadow-[0_0_50px_rgba(6,199,85,0.3)] text-xl"
             >
               <span>聯繫官方 LINE 客服</span>
-            </a>
           </div>
         </div>
       </div>

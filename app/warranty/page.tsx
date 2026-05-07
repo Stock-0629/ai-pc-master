@@ -71,7 +71,6 @@ export default function WarrantyPage() {
           </div>
         </div>
             </p>
-        </footer>
       </div>
     </main>
   );
