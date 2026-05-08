@@ -1,5 +1,6 @@
 import React from 'react';
-import { Cpu, Layout, HardDrive, Zap, MousePointer2, Info } from 'lucide-react';
+// 這裡必須包含 ShieldCheck
+import { Cpu, Layout, HardDrive, Zap, MousePointer2, Info, ShieldCheck } from '1
 
 export default function PackagesPage() {
   return (
@@ -332,7 +333,7 @@ export default function PackagesPage() {
 
         {/* 頁尾提醒 */}
         <p className="text-center mt-12 text-slate-600 text-xs font-bold uppercase tracking-widest">
-          ※ 實際報價以當日欣亞報價系統為準 | 組裝工資另計
+          ※ 實際報價以報價系統為準 | 組裝工資另計
         </p>
       </div>
     </div>
