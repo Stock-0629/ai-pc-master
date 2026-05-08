@@ -3,11 +3,13 @@ import { ShieldCheck, Cpu, Layout, HardDrive, Zap, MousePointer2, Info } from 'l
 
 export default function PackagesPage() {
   const packages = [
-    { icon: Cpu, label: "處理器 CPU", val: "Intel Core i5-14100", price: "$4,400", note: "內置強大顯示晶片" },
-    { icon: Layout, label: "主機板 MB", val: "華碩 TUF GAMING B760-PLUS WIFI", price: "$5,490", note: "穩定且具有 Wi-Fi 6 功能" },
-    { icon: Zap, label: "記憶體 RAM", val: "威剛 16GB DDR5-5600", price: "$1,600", note: "高效能運行環境" },
-    { icon: HardDrive, label: "硬碟 SSD", val: "威剛 XPG S70 BLADE 1TB Gen4", price: "$2,650", note: "讀取速 7000MB/s" },
-    { icon: Info, label: "電源 PSU", val: "海韻 Focus GX-550 (550W)", price: "$2,690", note: "10 年保固 穩定之選" }
+const packages = [
+  { icon: Cpu, label: "處理器 CPU", val: "Intel Core i5-12400", note: "內建強大顯示晶片" },
+  { icon: Layout, label: "主機板 MB", val: "華擎 B660M-HDV", note: "支援高速記憶體" },
+  { icon: Zap, label: "記憶體 RAM", val: "金士頓 8GB DDR4", note: "流暢運行多工作業" },
+  { icon: HardDrive, label: "硬碟 SSD", val: "威剛 500GB M.2", note: "極速開機體驗" },
+  { icon: Info, label: "電源 PSU", val: "海盜船 550W", note: "穩定電力輸出" },
+];
   ];
 
   return (
@@ -48,10 +50,10 @@ export default function PackagesPage() {
                       <div className="font-medium">{item.val}</div>
                     </div>
                   </div>
-                  <div className="text-right">
-                    <div className="text-sm font-bold text-cyan-500">{item.price}</div>
-                    <div className="text-[10px] text-slate-500">{item.note}</div>
-                  </div>
+<div className="text-right">
+  <div className="text-sm font-bold text-cyan-400">{item.price}</div>
+  <div className="text-[10px] text-slate-400">TWD</div>
+</div>
                 </div>
               ))}
             </div>
