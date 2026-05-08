@@ -61,11 +61,12 @@ export default function WarrantyPage() {
             {/* 4. 法律警語 */}
             <section className="p-10 text-slate-500 text-sm italic border-t border-white/10">
               <h3 className="font-bold text-slate-400 mb-4 uppercase tracking-widest">Legal Disclaimer / 法律聲明</h3>
-              <p className="leading-relaxed">
-                1. 本商行（托尼購商行 / JC電腦組裝）僅負責代購與硬體組裝服務，所有硬體瑕疵之最終判斷權歸屬於硬體原廠。<br />
-                2. 對於因電腦故障導致之任何數據損失、營業損失或時間成本，本商行概不負責。建議使用者定期備份重要資料。<br />
-                3. 若經檢測發現為人為因素（如：自行拆解、超頻損壞、液體滲入、雷擊天災等），將不在免費代送與保固服務範圍內。<br />
-                4. 本保固條款之解釋權歸 托尼購商行 所有。
+<p className="leading-relaxed">
+  1. 本執行（代換運行／火場級故障）僅負責代換與檢測服務，並不包含其硬體損壞之最終判定最終解釋權<br />
+  2. 對於刮傷、腐蝕、鏽蝕等外部損壞，不影響其原始運作功能下，不得更換，請謹慎使用並維護相關重要資料<br />
+  3. 如遇換貨時損壞人為因素（如：自行拆解、線路損壞、液體滲入、衝擊天災等），將不在免費代換服務保固範圍內<br />
+  4. 本條款條款之解釋權歸 托尼購商行 所有。
+</p>
               </p>
             </section>
           </div>
