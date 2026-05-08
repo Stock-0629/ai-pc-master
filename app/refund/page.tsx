@@ -86,14 +86,14 @@ export default function RefundPolicyPage() {
             <h2 className="text-2xl font-black text-white mb-5 flex items-center gap-3">
               <span className="text-cyan-400">04.</span> 權利擔保聲明
             </h2>
-            <p className="text-lg text-slate-400 leading-loose">
+            <p> className="text-lg text-slate-400 leading-loose">
               消費者委託客製之內容（圖片、標誌、文字）須保證未侵害他人之智慧財產權。如因內容引發法律糾紛，由消費者自行承擔法律責任。本服務條款若有未盡事宜，雙方同意以台灣桃園地方法院為第一審管轄法院。
             </p>
           </section>
 
           {/* LINE Support Button - 修正連結失效問題 */}
           <div className="mt-16 text-center py-12 border-t border-slate-800">
-            <p className="text-slate-500 mb-8 text-lg italic font-medium">如有退換貨需求，請先準備好「開箱影片」並聯繫客服：</p>
+            <p> className="text-slate-500 mb-8 text-lg italic font-medium">如有退換貨需求，請先準備好「開箱影片」並聯繫客服：</p>
             <a 
               href="https://lin.ee/rELcEE2" 
               target="_blank" 
