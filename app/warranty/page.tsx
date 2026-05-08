@@ -1,72 +1,76 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import React from "react";
+import { ShieldCheck, Info, HeartHandshake } from "lucide-react";
 
 export default function WarrantyPage() {
-  const lineUrl = "https://lin.ee/rELcEE2";
-
   return (
-    <main className="min-h-screen bg-[#020617] text-slate-50 font-sans relative overflow-hidden selection:bg-cyan-500 selection:text-slate-950">
-      {/* 科技感背景 */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-cyan-500/10 blur-[120px]"></div>
-      </div>
+    <main className="min-h-screen bg-black text-white pt-24 pb-20 px-4">
+      <div className="max-w-4xl mx-auto">
+        {/* 標題區 */}
+        <div className="mb-12 border-l-4 border-blue-500 pl-6">
+          <h1 className="text-4xl font-black tracking-tighter">
+            保固條件 <span className="text-blue-500 text-2xl ml-2">WARRANTY POLICY</span>
+          </h1>
+          <p className="text-slate-400 mt-2 font-bold italic">
+            托尼購商行：售後服務是我們的品牌生命線
+          </p>
+        </div>
 
-      <div className="relative z-10">
-      
+        <div className="space-y-8">
+          {/* 第一部分：硬體保固 */}
+          <section className="bg-slate-900/40 border border-white/10 rounded-3xl p-8">
+            <div className="flex items-center gap-3 mb-6 text-blue-400">
+              <ShieldCheck size={24} />
+              <h2 className="text-xl font-black">原廠硬體保固</h2>
+            </div>
+            <ul className="space-y-4 text-slate-300 leading-relaxed">
+              <li className="flex gap-3">
+                <span className="text-blue-500 font-bold">01.</span>
+                <span>
+                  所有零件皆為 <strong className="text-white">全新公司貨</strong>，保固期限依原廠官方規定為準（通常為 3 至 10 年）。
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-blue-500 font-bold">02.</span>
+                <span>
+                  保固期間內若硬體發生非人為故障，托尼購商行提供「免費代送修」服務。
+                </span>
+              </li>
+            </ul>
+          </section>
 
-        <div className="max-w-4xl mx-auto px-6 py-24">
-          <h1 className="text-6xl font-black italic uppercase mb-16 border-l-8 border-cyan-500 pl-8">Warranty Policy / <span className="text-cyan-400">保固條款</span></h1>
-          
-          <div className="space-y-12">
-            {/* 1. 台灣原廠件 */}
-            <section className="bg-white/[0.03] border border-white/10 p-10 rounded-[3rem]">
-              <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
-                <span className="text-cyan-500">01.</span> 台灣原廠代理硬體
-              </h2>
-              <ul className="space-y-4 text-slate-300 text-lg leading-relaxed list-disc ml-6">
-                <li>所有台灣零件均享由「原廠」提供之完整保固（期限依原廠公告為準）。</li>
-                <li><strong className="text-white">加值服務：</strong> 自交機日起一年內，發生非人為故障，本商行提供「免費代送原廠」服務。</li>
-                <li>請務必保留零件完整外盒與保固卡，以利後續出保流程。</li>
-              </ul>
-            </section>
+          {/* 第二部分：加值服務 */}
+          <section className="bg-slate-900/40 border border-white/10 rounded-3xl p-8">
+            <div className="flex items-center gap-3 mb-6 text-cyan-400">
+              <HeartHandshake size={24} />
+              <h2 className="text-xl font-black">托尼購專屬服務</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="p-5 bg-white/5 rounded-2xl border border-white/5">
+                <h3 className="text-white font-bold mb-2">終身技術諮詢</h3>
+                <p className="text-sm text-slate-400">
+                  電腦遇到任何疑難雜症，一律提供線上遠端排查服務，讓您用得安心。
+                </p>
+              </div>
+              <div className="p-5 bg-white/5 rounded-2xl border border-white/5">
+                <h3 className="text-white font-bold mb-2">一年免費檢測</h3>
+                <p className="text-sm text-slate-400">
+                  購買起一年內，非人為因素之硬體檢測與系統重置一律免收工資。
+                </p>
+              </div>
+            </div>
+          </section>
 
-            {/* 2. 系統與軟體 */}
-            <section className="bg-white/[0.03] border border-white/10 p-10 rounded-[3rem]">
-              <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
-                <span className="text-cyan-500">02.</span> 軟體系統支援
-              </h2>
-              <ul className="space-y-4 text-slate-300 text-lg leading-relaxed list-disc ml-6">
-                <li><strong className="text-white">遠端協助：</strong> 交機日起一年內，提供免費遠端軟體除錯與技術諮詢。</li>
-                <li>服務內容包含：驅動程式異常、系統優化建議。</li>
-                <li>※ 註：不包含盜版軟體安裝、因使用者操作不當導致之系統毀損重灌。</li>
-              </ul>
-            </section>
-
-            {/* 3. 海外件聲明 */}
-            <section className="bg-red-500/5 border border-red-500/20 p-10 rounded-[3rem]">
-              <h2 className="text-2xl font-black text-red-400 mb-6 flex items-center gap-3">
-                <span className="text-red-500">03.</span> 海外跨境硬體（特別聲明）
-              </h2>
-              <p className="text-slate-300 text-lg leading-relaxed">
-                為追求極致性價比與美學，部分特殊零件（如特製機殼、風扇等）為海外採購。
-                <br /><br />
-                <strong className="text-red-400">※ 注意事項：</strong>
-                海外硬體於交機時均會提供測試正常之紀錄影片，<strong className="underline">交機完成後本商行不負擔後續硬體保固責任。</strong>
-                如需代寄回原發貨國維修，需由客戶自付國際往返運費。
-              </p>
-            </section>
-
-            {/* 4. 法律警語 */}
-            <section className="p-10 text-slate-500 text-sm italic border-t border-white/10">
-              <h3 className="font-bold text-slate-400 mb-4 uppercase tracking-widest">Legal Disclaimer / 法律聲明</h3>
-<p className="leading-relaxed">
-  1. 本執行（代換運行／火場級故障）僅負責代換與檢測服務，並不包含其硬體損壞之最終判定最終解釋權<br />
-  2. 對於刮傷、腐蝕、鏽蝕等外部損壞，不影響其原始運作功能下，不得更換，請謹慎使用並維護相關重要資料<br />
-  3. 如遇換貨時損壞人為因素（如：自行拆解、線路損壞、液體滲入、衝擊天災等），將不在免費代換服務保固範圍內<br />
-  4. 本條款條款之解釋權歸 托尼購商行 所有<br />  
-
+          {/* 提醒區塊 */}
+          <div className="p-6 bg-blue-500/5 rounded-2xl border border-blue-500/20 flex items-start gap-3">
+            <Info className="text-blue-400 shrink-0" size={20} />
+            <p className="text-xs text-slate-500 leading-relaxed italic">
+              溫馨提醒：保固不包含人為損壞（如：液體潑濺、自行拆解、外部撞擊）、軟體中毒或第三方軟體衝突。
+              若超過一年保固期，代送修將酌收基本手續費。
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );
