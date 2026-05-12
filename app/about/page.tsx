@@ -37,7 +37,7 @@ export default function AboutPage() {
         <footer className="mt-20 pt-8 border-t border-white/10 text-slate-500 text-xs">
           <p>托尼購商行 | 統一編號：80051976</p>
           <p>地址：彰化縣花壇鄉中正路105巷7號</p>
-        </footer home>
+        </footer>
       </div>
     </main>
   );

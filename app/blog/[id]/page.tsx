@@ -23,6 +23,7 @@ export default function BlogDetail() {
         <Link href="/" className="text-3xl font-black italic tracking-tighter text-white hover:text-cyan-400 transition flex items-center gap-3">AI PC MASTER</Link>
         <div className="flex items-center gap-12 text-lg font-black uppercase">
             <Link href="/" className="text-slate-400 hover:text-white transition">🏠 首頁</Link>
+            <Link href="/about" className="hover:text-cyan-400 transition-colors">關於我們</Link>
             <Link href="/blog" className="text-white border-b-2 border-cyan-500 pb-1">📰 最新資訊</Link>
             <a href="https://lin.ee/rELcEE2" target="_blank" rel="noopener noreferrer" className="bg-[#06C755] text-white px-10 py-3 rounded-full hover:brightness-110 transition shadow-[0_0_30px_rgba(6,199,85,0.4)]">💬 聯絡我們</a>
         </div>
