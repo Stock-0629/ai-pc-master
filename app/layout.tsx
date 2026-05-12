@@ -31,7 +31,11 @@ export default function RootLayout({
                     <Home size={14} /> 首頁
                   </Link>
                 </li>
-                
+                <li>
+                  <Link href="/about" className="hover:text-cyan-400 transition-colors">
+                    <Home size={14} /> 關於我們
+                  </Link>
+                </li>
                 {/* 這是你要新增的：電腦套餐 */}
                 <li>
                   <Link href="/packages" className="flex items-center gap-1 text-cyan-400 border-b border-cyan-400/50 pb-0.5 hover:text-cyan-300 transition">
