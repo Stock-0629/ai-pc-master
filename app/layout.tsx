@@ -33,7 +33,7 @@ export default function RootLayout({
                 </li>
                 <li>
                   <Link href="/about" className="hover:text-cyan-400 transition-colors">
-                    <Home size={14} /> 關於我們
+                    ■ 關於我們
                   </Link>
                 </li>
                 {/* 這是你要新增的：電腦套餐 */}
